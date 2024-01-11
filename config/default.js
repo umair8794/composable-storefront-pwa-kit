@@ -22,7 +22,7 @@ module.exports = {
         commerceAPI: {
             proxyPath: `/mobify/proxy/api`,
             parameters: {
-                clientId: 'b3df9a7f-e803-4aa0-9221-78b48a061445',
+                clientId: '6f73f494-1dbd-4f55-8ad6-27d9529ca2ca',
                 organizationId: 'f_ecom_zzrb_086',
                 shortCode: 'kv7kzm78',
                 siteId: 'RefArch'
