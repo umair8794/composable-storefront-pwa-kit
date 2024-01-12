@@ -12,6 +12,8 @@ import {useLocation} from 'react-router-dom'
 
 // Components
 import {
+    Alert,
+    AlertIcon,
     Box,
     Button,
     SimpleGrid,
@@ -47,7 +49,15 @@ import {
 class MyHeader extends Component {
     render() {
         const {name} = this.props
-        return <h1>Hello, {name}!</h1>
+        return (
+            <Box>
+                <h1>Hello, {name}!</h1>
+                <Alert padding={10} status="success">
+                    <AlertIcon />
+                    Chakra UI components unlocked!
+                </Alert>
+            </Box>
+        )
     }
 }
 
