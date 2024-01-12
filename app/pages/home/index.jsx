@@ -5,7 +5,7 @@
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-import React, {useEffect} from 'react'
+import React, {useEffect, Component} from 'react'
 import PropTypes from 'prop-types'
 import {useIntl, FormattedMessage} from 'react-intl'
 import {useLocation} from 'react-router-dom'
@@ -44,6 +44,13 @@ import {
     HOME_SHOP_PRODUCTS_LIMIT
 } from '../../constants'
 
+class MyHeader extends Component {
+    render() {
+        const {name} = this.props
+        return <h1>Hello, {name}!</h1>
+    }
+}
+
 /**
  * This is the home page for Retail React App.
  * The page is created for demonstration purposes.
@@ -67,6 +74,8 @@ const Home = ({productSearchResult, isLoading}) => {
                 description="Commerce Cloud Retail React App"
                 keywords="Commerce Cloud, Retail React App, React Storefront"
             />
+
+            <MyHeader name="your name here" />
 
             <Hero
                 title={intl.formatMessage({
