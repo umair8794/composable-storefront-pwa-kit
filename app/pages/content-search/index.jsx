@@ -1,6 +1,7 @@
 import React from 'react'
 import fetch from 'cross-fetch'
-import {List, ListItem, Link} from '@chakra-ui/react'
+import {List, ListItem} from '@chakra-ui/react'
+import Link from '../../components/link'
 
 const ContentSearch = (props) => {
     if (!props) {
